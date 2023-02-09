@@ -15,22 +15,40 @@ body {
 
 /* #reagion debug */
 
-.debug #app_header {
-    background-color: beige;
+
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --zoom-white:white;
+    --zoom-black:black;
+
 }
 
 /* #endreagion debug */
-
+#app_main {
+    background-color: aquamarine;
+    height: 100vh;
+}
 /* #reagion header */
 #app_header {
     height: 10vh;
+    position: fixed;
+    width: 100%;
+    right: 0;
+    top: 0;
+    background-color: var(--zoom-black);
 }
 
 .view {
     position: absolute;
     right: 0;
 }
-
+.fa-table-cells {
+    text-decoration: navajowhite;
+}
 .view ul {
     list-style: none;
     line-height: 10vh;
@@ -39,6 +57,10 @@ body {
 .view li {
     display: inline;
     padding-right: 1rem;
+}
+
+.view a {
+    color: var(--zoom-white);
 }
 
 /* #endreagion header */
