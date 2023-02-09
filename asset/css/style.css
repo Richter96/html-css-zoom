@@ -3,3 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* #reagion debug */
+
+#app_header {
+    height: 60px;
+    background-color: beige;
+}
+
+/* #endreagion debug */
+
+/* #reagion header */
+
+
+/* #endreagion header */
