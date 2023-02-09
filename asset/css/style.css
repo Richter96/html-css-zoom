@@ -16,7 +16,6 @@ body {
 /* #reagion debug */
 
 .debug #app_header {
-    height: 60px;
     background-color: beige;
 }
 
@@ -24,12 +23,22 @@ body {
 
 /* #reagion header */
 #app_header {
-    margin-top: 2rem;
+    height: 10vh;
 }
 
 .view {
     position: absolute;
     right: 0;
+}
+
+.view ul {
+    list-style: none;
+    line-height: 10vh;
+}
+
+.view li {
+    display: inline;
+    padding-right: 1rem;
 }
 
 /* #endreagion header */
