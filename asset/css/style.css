@@ -9,9 +9,13 @@
     margin: auto;
 }
 
+body {
+    background-color: black;
+}
+
 /* #reagion debug */
 
-#app_header {
+.debug #app_header {
     height: 60px;
     background-color: beige;
 }
@@ -19,6 +23,13 @@
 /* #endreagion debug */
 
 /* #reagion header */
+#app_header {
+    margin-top: 2rem;
+}
 
+.view {
+    position: absolute;
+    right: 0;
+}
 
 /* #endreagion header */
