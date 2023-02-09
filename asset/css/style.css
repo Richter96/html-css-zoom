@@ -29,12 +29,6 @@ a {
     text-decoration: none;
 }
 
-#app_main {
-    background-color: aquamarine;
-    height: 100vh;
-    margin-top: 5vh;
-}
-
 /* #endregion common */
 
 
@@ -52,8 +46,7 @@ a {
 
 /* #region header */
 #app_header {
-    height: 5vh;
-    position: fixed;
+    height: 50px;
     width: 100%;
     right: 0;
     top: 0;
@@ -69,7 +62,7 @@ a {
 }
 .view ul {
     list-style: none;
-    line-height: 5vh;
+    line-height: 50px;
 }
 
 .view li {
@@ -84,16 +77,25 @@ a {
 /* #endregion header */
 
 /* #region main */
+
+#app_main {
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+}
+
 .box.video{
     width: calc(100% / 7);
+    padding: 0.25rem;
 }
 
 .row {
     flex-wrap: wrap;
 }
+
 .img_video {
     position: relative;
 }
+
 img {
     max-width: 100%;
 }
