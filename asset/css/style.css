@@ -122,6 +122,10 @@ img {
     margin-top: 1rem;
     padding: 0.5rem;
 }
+
+#app_footer .d-flex {
+    justify-content: space-between;
+}
 .debug .box_btn {
     background-color: var(--zoom-black);
     border: 1px solid rgb(47, 47, 47);
@@ -141,18 +145,35 @@ img {
 }
 
 .btn.small i {
-    font-size: 1rem;
+    font-size: 1rem ;
 }
 
 .small {
     vertical-align: text-top;
 }
 
-.dblock { 
-    display: block;
+.fa-share-from-square {
+    color: lightgreen;
 }
 
+.dblock { 
+    display: block;
+    padding: 0 0.5rem;
+}
 
+.close_call {
+    background-color: #ff0000d4;
+    padding: 1rem;
+    border-radius: 50px;
+    color: white;
+    border: none;
+}
+.end_call {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
 /* #endregion footer */
 
 
