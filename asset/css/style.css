@@ -133,15 +133,20 @@ img {
     color: var(--zoom-white);
     background-color: rgba(255, 255, 255, 0);
     padding: 0.5rem;
-    text-align: center;
 }
 
-.btn.big i {
+.btn i {
     font-size: 2rem;
     padding-bottom: 1rem;
 }
 
+.btn.small i {
+    font-size: 1rem;
+}
 
+.small {
+    vertical-align: text-top;
+}
 
 .dblock { 
     display: block;
