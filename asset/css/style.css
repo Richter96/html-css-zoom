@@ -1,40 +1,58 @@
+
+/* #region common */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+:root {
+    --zoom-white:white;
+    --zoom-black:black;
+}
+
 .container {
-    width: 80%;
+    width: 90%;
     margin: auto;
+}
+
+.d-flex {
+    display: flex;
 }
 
 body {
     background-color: black;
 }
 
-/* #reagion debug */
-
-
-
 a {
     text-decoration: none;
 }
 
-:root {
-    --zoom-white:white;
-    --zoom-black:black;
-
-}
-
-/* #endreagion debug */
 #app_main {
     background-color: aquamarine;
     height: 100vh;
+    margin-top: 5vh;
 }
-/* #reagion header */
+
+/* #endregion common */
+
+
+/* #region debug */
+
+.debug .box_video{
+    background-color: rgb(244, 1, 1);
+    height: 5rem;
+    border: 1px solid black;
+}
+
+
+/* #endregion debug */
+
+
+/* #region header */
 #app_header {
-    height: 10vh;
+    height: 5vh;
     position: fixed;
     width: 100%;
     right: 0;
@@ -51,7 +69,7 @@ a {
 }
 .view ul {
     list-style: none;
-    line-height: 10vh;
+    line-height: 5vh;
 }
 
 .view li {
@@ -63,11 +81,30 @@ a {
     color: var(--zoom-white);
 }
 
-/* #endreagion header */
+/* #endregion header */
 
-/* #reagion main */
+/* #region main */
+.box.video{
+    width: calc(100% / 7);
+}
 
+.row {
+    flex-wrap: wrap;
+}
+.img_video {
+    position: relative;
+}
+img {
+    max-width: 100%;
+}
 
-/* #endreagion main */
+.name_team {
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.663);
+    color: white;
+}
+/* #endregion main */
 
 
