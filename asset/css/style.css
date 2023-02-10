@@ -13,17 +13,13 @@
     --zoom-grey:#222222;
 }
 
-.container {
-    width: 90%;
-    margin: auto;
-}
-
 .d-flex {
     display: flex;
 }
 
 body {
     background-color: black;
+    overflow: hidden;
 }
 
 a {
@@ -61,7 +57,6 @@ a {
 /* #region header */
 #app_header {
     height: 50px;
-    width: 100%;
     background-color: var(--zoom-black);
     text-align: end;
     padding: 0.5rem;
@@ -96,15 +91,21 @@ a {
 
 /* #region main */
 
+.partecipants {
+    height: calc(100vh - 150px);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 #app_main {
     background-color: rgb(0, 0, 0);
-    margin-top: 2rem;
     height: calc(100vh - 150px);
     overflow-y: auto;
 }
 
-.box.video{
-    max-width: calc(100% / 7);
+.video{
+    width: 250px;
+    height: 150px;
     padding: 0.25rem;
 }
 
