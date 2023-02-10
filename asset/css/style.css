@@ -50,7 +50,11 @@ a {
     height: 100px;
 }
 
-
+.debug .box_btn {
+    background-color: var(--zoom-black);
+    border: 1px solid rgb(47, 47, 47);
+    flex-basis: 50%;
+}
 /* #endregion debug */
 
 
@@ -58,9 +62,9 @@ a {
 #app_header {
     height: 50px;
     width: 100%;
-    right: 0;
-    top: 0;
     background-color: var(--zoom-black);
+    text-align: end;
+    padding: 0.5rem;
 }
 
 .view {
@@ -81,7 +85,13 @@ a {
 .view a {
     color: var(--zoom-white);
 }
+.btn-h{
+    background-color: var(--zoom-grey);
+    color: var(--zoom-white);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.5rem;
 
+}
 /* #endregion header */
 
 /* #region main */
@@ -89,10 +99,11 @@ a {
 #app_main {
     background-color: rgb(0, 0, 0);
     margin-top: 2rem;
+    height: calc(100vh - 150px);
 }
 
 .box.video{
-    width: calc(100% / 7);
+    max-width: calc(100% / 7);
     padding: 0.25rem;
 }
 
@@ -122,17 +133,13 @@ img {
 #app_footer {
     margin-top: 1rem;
     padding: 0.5rem;
-    height: 15vh;
+    height: 100px;
     background-color: var(--zoom-grey);
 }
 
 #app_footer .d-flex {
     justify-content: space-between;
-}
-.debug .box_btn {
-    background-color: var(--zoom-black);
-    border: 1px solid rgb(47, 47, 47);
-    flex-basis: 50%;
+    
 }
 
 .btn {
